@@ -1,0 +1,59 @@
+ <!-- Written by Ogundele Olalekan-->
+<!-- Task 13 for Hyperion Web Dev Bootcamp-->
+<!-- written on 15-03-02020-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Catalouge</title>
+    <script type="text/javascript" src="mCat.js"></script>
+</head>
+
+<!-- Manin Content-->
+<body onload="myLoad()">
+    <div class="container-fluid" align="center">
+        <div class="col-md-12">
+            <h1>
+                <strong>
+                    Enter information about your Favourite Track
+                </strong>
+            </h1>
+            <form>
+                <label for="musicTitle">Enter Track Name: </label>
+                <input type="text" name="musicTitle" id="musicTitle" required>
+                <br>
+                <br>
+                <label for="artistNM">Enter Artist Name: </label>
+                <input type="text" name="artistNM" id="artistNM" required>
+                <br>
+                <br>
+                <label for="albumName">Enter Album Name: </label>
+                <input type="text" name="albumName" id="albumName" required>
+                <br>
+                <br>
+                <label for="musicGenre">Enter Track Genre: </label>
+                <input type="text" name="musicGenre" id="musicGenre" required>
+                <br>
+                <br>
+                <label for="yearReleased">Enter Realeased Year: </label>
+                <input type="text" name="yearProduced" id="yearReleased" required>
+                <br>
+                <br>
+                <label for="prodName">Enter Producer Name: </label>
+                <input type="text" name="prodName" id="prodName" required>
+                <br>
+                <br>
+                <button onclick="addInfo()"> Create your track info</button>
+            </form>
+            <br>
+            <select id="musicInfo">
+                <option value="">--Please choose a track --</option>
+            </select>
+            <br>
+            <button onclick="deleteItem()">Delete item</button>
+        </div>
+    </div>
+</body>
+
+</html>
